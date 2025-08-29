@@ -118,3 +118,18 @@ export default function Home() {
     </div>
   );
 }
+
+/* Premium badge */
+.gold-title {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--gold-2);
+  background: #0b0c0e;          /* μαύρο φόντο */
+  color: var(--gold-1);         /* χρυσά γράμματα */
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 0 12px rgba(240, 185, 70, 0.18);
+}
