@@ -23,7 +23,7 @@ export default function Home() {
             <div>
               <h1 style={{ fontSize: 42, lineHeight: 1.1, margin: 0, fontWeight: 900 }}>
                 Smart Trading & Research<br />
-                <span className="gold gold-glow">
+                <span className="gold-title">
                   by GC ASTRA
                 </span>
               </h1>
