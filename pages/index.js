@@ -5,7 +5,7 @@ export default function Home() {
         <div className="container">
           <nav>
             <div className="logo">
-              <img src="/logo.png" alt="GC Astra Logo" style={{ height: 50 }} />
+              <img src="/logo.png" alt="GC Astra Logo" style={{ height: 80 }} />
             </div>
             <div style={{ display: 'none' }}></div>
             <a className="btn-outline" href="#contact">Contact</a>
