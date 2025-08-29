@@ -48,3 +48,79 @@ nav { display:flex; align-items:center; justify-content:space-between; height:64
 .muted{ color: var(--muted); }
 .section{ padding: 48px 0; }
 footer{ border-top:1px solid rgba(255,255,255,.06); padding:24px 0; color: var(--muted); }
+/* Μεγαλύτερο & καθαρότερο logo */
+.logo-img {
+  height: 64px;          /* αυξάνει λίγο το μέγεθος */
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,.25));
+}
+@media (max-width: 480px) {
+  .logo-img { height: 56px; }
+}
+
+/* Premium κάρτα δεξιά */
+.pro-card {
+  position: relative;
+  text-align: center;
+  padding: 40px 28px;
+  border-radius: 16px;
+  background:
+    radial-gradient(120% 120% at 50% 0%,
+      rgba(255,199,96,0.06) 0%,
+      rgba(255,199,96,0.02) 35%,
+      rgba(18,19,22,0) 70%)
+    , var(--card, #121316);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.35),
+              inset 0 0 0 1px rgba(255,255,255,0.03);
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: var(--muted, #9ca3af);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0 0 14px 0;
+  font-weight: 800;
+}
+
+.pills {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0 6px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pills li {
+  font-size: 13px;
+  color: #e5e7eb;
+  background: rgba(255,199,96,0.08);
+  border: 1px solid rgba(255,199,96,0.25);
+  border-radius: 999px;
+  padding: 6px 10px;
+  backdrop-filter: blur(2px);
+}
+
+.link-cta {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #fbbf24; /* χρυσό */
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(251,191,36,.35);
+  padding-bottom: 2px;
+}
+.link-cta:hover {
+  filter: brightness(1.1);
+  border-bottom-color: rgba(251,191,36,.7);
+}
