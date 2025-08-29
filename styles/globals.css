@@ -10,18 +10,42 @@
   --gold-2: #e3b558;
   --gold-3: #c9963a;
 
-  --gold-shadow: 0 0 10px rgba(240, 185, 70, .18), 0 0 24px rgba(240, 185, 70, .10);
+  --gold-shadow: 0 0 10px rgba(240, 185, 70, .18),
+                 0 0 24px rgba(240, 185, 70, .10);
 }
 
 * { box-sizing: border-box; }
-html, body { padding: 0; margin: 0; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial; }
+html, body {
+  padding: 0;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial;
+}
 a { color: inherit; text-decoration: none; }
 
-.container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 18px 20px; }
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 20px;
+}
 
 /* Header / nav */
-header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(6px); background: linear-gradient(to bottom, rgba(10,11,13,.65), rgba(10,11,13,.06)); border-bottom: 1px solid rgba(255,255,255,.06); }
-nav { display:flex; align-items:center; gap: 14px; height: 64px; }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(to bottom, rgba(10,11,13,.65), rgba(10,11,13,.06));
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+nav {
+  display:flex;
+  align-items:center;
+  gap: 14px;
+  height: 64px;
+}
 .logo img { display:block; border-radius: 999px; }
 
 /* Buttons */
@@ -30,7 +54,10 @@ nav { display:flex; align-items:center; gap: 14px; height: 64px; }
   border-radius: 12px;
   font-weight: 700;
   cursor: pointer;
-  transition: transform .08s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+  transition: transform .08s ease,
+              box-shadow .18s ease,
+              background .18s ease,
+              border-color .18s ease;
 }
 
 .btn {
@@ -39,7 +66,11 @@ nav { display:flex; align-items:center; gap: 14px; height: 64px; }
   border: 1px solid rgba(255,255,255,.08);
   box-shadow: var(--gold-shadow);
 }
-.btn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(240,185,70,.25), 0 0 0 1px rgba(240,185,70,.25) inset; }
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(240,185,70,.25),
+              0 0 0 1px rgba(240,185,70,.25) inset;
+}
 
 .btn-outline {
   border: 1px solid rgba(255,255,255,.18);
@@ -58,7 +89,9 @@ nav { display:flex; align-items:center; gap: 14px; height: 64px; }
   gap: 26px;
   grid-template-columns: 1fr minmax(320px, 430px);
 }
-@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
 
 h1 .gold {
   background-image: linear-gradient(135deg, var(--gold-1), var(--gold-2) 55%, var(--gold-3));
@@ -74,7 +107,8 @@ h1 .gold {
   box-shadow: 0 10px 24px rgba(0,0,0,.28);
 }
 .card-premium {
-  background: radial-gradient(120% 120% at 50% 0%, rgba(245,218,140,.06), transparent 45%), var(--card);
+  background: radial-gradient(120% 120% at 50% 0%, rgba(245,218,140,.06), transparent 45%),
+              var(--card);
 }
 
 /* Muted text */
@@ -86,6 +120,21 @@ h1 .gold {
 }
 .gold-glow {
   text-shadow: 0 0 8px rgba(240,185,70,.22);
+}
+
+/* Premium badge (GC ASTRA) */
+.gold-title {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--gold-2);
+  background: #0b0c0e;          /* μαύρο φόντο */
+  color: var(--gold-1);         /* χρυσά γράμματα */
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 0 12px rgba(240, 185, 70, 0.18);
 }
 
 /* Playbook link */
@@ -106,7 +155,10 @@ h1 .gold {
   transform-origin: left;
   transform: scaleX(.9);
 }
-.gold-link:hover::after { transform: scaleX(1); opacity: 1; }
+.gold-link:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
 
 /* Pills */
 .pill {
@@ -123,4 +175,7 @@ h1 .gold {
 .section { padding: 28px 0; }
 
 /* Footer */
-footer { border-top: 1px solid rgba(255,255,255,.06); padding: 18px 0 28px; }
+footer {
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: 18px 0 28px;
+}
