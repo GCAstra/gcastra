@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gcastra.vercel.app/sitemap.xml
