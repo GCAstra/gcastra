@@ -61,8 +61,8 @@ nav {
 /* Μεγαλύτερο Contact button στο nav */
 nav .btn-outline {
   padding: 1rem 1.5rem;   /* αυξάνει το μέγεθος */
-  font-size: 15px;        /* πιο έντονη γραμματοσειρά */
-  border-radius: 12px;    /* στρογγυλό κουμπί */
+  font-size: 25px;        /* πιο έντονη γραμματοσειρά */
+  border-radius: 20px;    /* στρογγυλό κουμπί */
 }
 
 /* ── Buttons ────────────────────────────────────────────── */
