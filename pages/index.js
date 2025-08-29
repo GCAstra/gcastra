@@ -1,4 +1,3 @@
-// pages/index.js
 export default function Home() {
   return (
     <div>
@@ -7,7 +6,7 @@ export default function Home() {
         <div className="container">
           <nav>
             <div className="logo">
-              <img src="/logo.png" alt="GC Astra Logo" style={{ height: 50 }} />
+              <img src="/logo.png" alt="GC Astra Logo" style={{ height: 54 }} />
             </div>
             <div style={{ display: 'none' }} />
             <a className="btn-outline" href="#contact">Contact</a>
@@ -24,13 +23,7 @@ export default function Home() {
             <div>
               <h1 style={{ fontSize: 42, lineHeight: 1.1, margin: 0, fontWeight: 900 }}>
                 Smart Trading & Research<br />
-                <span
-                  style={{
-                    background: 'linear-gradient(135deg,#fcd34d,#f59e0b)',
-                    WebkitBackgroundClip: 'text',
-                    color: 'transparent'
-                  }}
-                >
+                <span className="gold gold-glow">
                   by GC ASTRA
                 </span>
               </h1>
@@ -52,7 +45,7 @@ export default function Home() {
             </div>
 
             {/* Right column – Feature card */}
-            <div className="card" style={{ display: 'grid', placeItems: 'center', minHeight: 260 }}>
+            <div className="card card-premium" style={{ display: 'grid', placeItems: 'center', minHeight: 260 }}>
               <div style={{ textAlign: 'center' }}>
                 {/* Premium badge */}
                 <div className="gold-title" style={{ marginBottom: 10 }}>GC ASTRA</div>
@@ -61,26 +54,15 @@ export default function Home() {
                   Smart Investing & Research
                 </div>
 
-                {/* Chips */}
+                {/* Pills */}
                 <div style={{ display: 'flex', gap: 10, justifyContent: 'center', marginTop: 12 }}>
-                  <span className="chip">Markets</span>
-                  <span className="chip">Strategy</span>
-                  <span className="chip">Mentorship</span>
+                  <span className="pill">Markets</span>
+                  <span className="pill">Strategy</span>
+                  <span className="pill">Mentorship</span>
                 </div>
 
                 {/* Playbook link */}
-                <a
-                  href="#playbook"
-                  className="muted"
-                  style={{
-                    display: 'inline-block',
-                    marginTop: 16,
-                    textDecoration: 'none',
-                    fontWeight: 700,
-                    borderBottom: '2px solid rgba(252,211,77,.8)',
-                    paddingBottom: 2
-                  }}
-                >
+                <a href="#playbook" className="gold-link" style={{ display: 'inline-block', marginTop: 16 }}>
                   Learn the Playbook →
                 </a>
               </div>
@@ -92,12 +74,12 @@ export default function Home() {
         <section id="about" className="section">
           <h2 style={{ fontSize: 28 }}>About</h2>
           <p className="muted">
-            GC ASTRA focuses on rule-based intraday trading. We combine multi-timeframe context,
-            transparent execution, and order-flow timing for measurable, repeatable decisions.
+            GC ASTRA focuses on rule-based intraday trading.  
+            We combine multi-timeframe context, transparent execution,  
+            and order-flow timing for measurable, repeatable decisions.
           </p>
           <p className="muted" style={{ marginTop: 12 }}>
-            Our mission is to blend discipline with innovation—providing a clear playbook and
-            professional guidance so traders can grow with confidence.
+            Our mission is to blend discipline with innovation—providing a clear playbook and professional guidance so traders can grow with confidence.
           </p>
         </section>
 
