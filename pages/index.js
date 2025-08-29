@@ -53,7 +53,7 @@ export default function Home() {
         <section id="about" className="section">
           <h2 style={{ fontSize: 28 }}>About</h2>
           <p className="muted">
-            GC ASTRA focuses on rule-based intraday trading (ES/NQ).  
+            GC ASTRA focuses on rule-based intraday trading.  
             We combine multi-timeframe context, transparent execution,  
             and order-flow timing for measurable, repeatable decisions.
           </p>
