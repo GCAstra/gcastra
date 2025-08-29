@@ -4,11 +4,13 @@ export default function Home() {
       {/* Header */}
       <header>
         <div className="container">
-          <nav>
-            <div className="logo">
-              <img src="/logo.png" alt="GC Astra Logo" style={{ height: 70 }} />
+          <nav style={{ display: 'flex', alignItems: 'center', gap: 14, height: 64, justifyContent: 'space-between' }}>
+            {/* Left: Logo */}
+            <div className="logo" style={{ display: 'flex', alignItems: 'center' }}>
+              <img src="/logo.png" alt="GC Astra Logo" style={{ height: 50 }} />
             </div>
-            <div style={{ display: 'none' }} />
+
+            {/* Right: Contact */}
             <a className="btn-outline" href="#contact">Contact</a>
           </nav>
         </div>
@@ -23,9 +25,7 @@ export default function Home() {
             <div>
               <h1 style={{ fontSize: 42, lineHeight: 1.1, margin: 0, fontWeight: 900 }}>
                 Smart Trading & Research<br />
-                <span className="gold">
-                  by GC ASTRA
-                </span>
+                <span className="gold">by GC ASTRA</span>
               </h1>
 
               <p className="muted" style={{ marginTop: 14, fontSize: 18 }}>
@@ -44,27 +44,25 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Right column – Feature card */}
+            {/* Right column (Card) */}
             <div className="card card-premium" style={{ display: 'grid', placeItems: 'center', minHeight: 260 }}>
               <div style={{ textAlign: 'center' }}>
-                {/* Premium badge */}
-                <div className="gold-title" style={{ marginBottom: 10 }}>GC ASTRA</div>
+                {/* Χρυσό badge μόνο μέσα στο card */}
+                <div className="gold-title" style={{ marginBottom: 12 }}>GC ASTRA</div>
 
-                <div style={{ marginTop: 2, fontSize: 24, fontWeight: 700 }}>
+                <div style={{ marginTop: 4, fontSize: 24, fontWeight: 700 }}>
                   Smart Investing & Research
                 </div>
 
-                {/* Pills */}
-                <div style={{ display: 'flex', gap: 10, justifyContent: 'center', marginTop: 12 }}>
+                <div style={{ display: 'flex', gap: 10, justifyContent: 'center', marginTop: 14 }}>
                   <span className="pill">Markets</span>
                   <span className="pill">Strategy</span>
                   <span className="pill">Mentorship</span>
                 </div>
 
-                {/* Playbook link */}
-                <a href="#playbook" className="gold-link" style={{ display: 'inline-block', marginTop: 16 }}>
-                  Learn the Playbook →
-                </a>
+                <div style={{ marginTop: 16 }}>
+                  <a className="gold-link" href="#playbook">Learn the Playbook →</a>
+                </div>
               </div>
             </div>
           </div>
@@ -74,12 +72,12 @@ export default function Home() {
         <section id="about" className="section">
           <h2 style={{ fontSize: 28 }}>About</h2>
           <p className="muted">
-            GC ASTRA focuses on rule-based intraday trading.  
-            We combine multi-timeframe context, transparent execution,  
-            and order-flow timing for measurable, repeatable decisions.
+            GC ASTRA focuses on rule-based intraday trading. We combine multi-timeframe context,
+            transparent execution, and order-flow timing for measurable, repeatable decisions.
           </p>
-          <p className="muted" style={{ marginTop: 12 }}>
-            Our mission is to blend discipline with innovation—providing a clear playbook and professional guidance so traders can grow with confidence.
+          <p className="muted" style={{ marginTop: 10 }}>
+            Our mission is to blend discipline with innovation—providing a clear playbook and professional guidance
+            so traders can grow with confidence.
           </p>
         </section>
 
@@ -87,6 +85,7 @@ export default function Home() {
         <section id="cta" className="section card">
           <h3 style={{ fontSize: 22, marginTop: 0 }}>Ready to level up?</h3>
           <p className="muted">Leave your email and we'll reach out.</p>
+
           <form
             onSubmit={(e) => e.preventDefault()}
             style={{ display: 'grid', gap: 12, gridTemplateColumns: '1fr auto' }}
