@@ -7,7 +7,7 @@ export default function Home() {
           <nav style={{ display: 'flex', alignItems: 'center', gap: 14, height: 64, justifyContent: 'space-between' }}>
             {/* Left: Logo */}
             <div className="logo" style={{ display: 'flex', alignItems: 'center' }}>
-              <img src="/logo.png" alt="GC Astra Logo" style={{ height: 70 }} />
+              <img src="/logo.png" alt="GC Astra Logo" style={{ height: 80 }} />
             </div>
 
             {/* Right: Contact */}
