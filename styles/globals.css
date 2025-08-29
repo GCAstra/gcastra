@@ -10,13 +10,11 @@
   --gold-2: #e3b558;
   --gold-3: #c9963a;
 
-  --gold-shadow:
-    0 0 10px rgba(240,185,70,.18),
-    0 0 24px rgba(240,185,70,.10);
+  --gold-shadow: 0 0 10px rgba(240, 185, 70, .18),
+                 0 0 24px rgba(240, 185, 70, .10);
 }
 
 * { box-sizing: border-box; }
-
 html, body {
   padding: 0;
   margin: 0;
@@ -24,7 +22,6 @@ html, body {
   color: var(--text);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial;
 }
-
 a { color: inherit; text-decoration: none; }
 
 .container {
@@ -34,7 +31,7 @@ a { color: inherit; text-decoration: none; }
   padding: 18px 20px;
 }
 
-/* ── Header / nav ───────────────────────────────────────── */
+/* Header / nav */
 header {
   position: sticky;
   top: 0;
@@ -43,33 +40,24 @@ header {
   background: linear-gradient(to bottom, rgba(10,11,13,.65), rgba(10,11,13,.06));
   border-bottom: 1px solid rgba(255,255,255,.06);
 }
-
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;   /* Contact πάει δεξιά */
-  gap: 14px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
   height: 64px;
+  gap: 14px;
 }
 
-.logo img {
-  display: block;
-  height: 40px;
-  width: auto;
-  border-radius: 999px;
-}
-
-/* ── Buttons ────────────────────────────────────────────── */
+/* Buttons */
 .btn, .btn-outline {
   padding: .9rem 1.1rem;
   border-radius: 12px;
   font-weight: 700;
   cursor: pointer;
-  transition:
-    transform .08s ease,
-    box-shadow .18s ease,
-    background .18s ease,
-    border-color .18s ease;
+  transition: transform .08s ease,
+              box-shadow .18s ease,
+              background .18s ease,
+              border-color .18s ease;
 }
 
 .btn {
@@ -80,24 +68,25 @@ nav {
 }
 .btn:hover {
   transform: translateY(-1px);
-  box-shadow:
-    0 6px 16px rgba(240,185,70,.25),
-    0 0 0 1px rgba(240,185,70,.25) inset;
+  box-shadow: 0 6px 16px rgba(240,185,70,.25),
+              0 0 0 1px rgba(240,185,70,.25) inset;
 }
 
 .btn-outline {
   border: 1px solid rgba(255,255,255,.18);
   background: transparent;
   color: var(--text);
+  padding: 1rem 1.5rem;
+  font-size: 15px;
+  border-radius: 12px;
 }
 .btn-outline:hover {
   border-color: rgba(255,255,255,.4);
   background: rgba(255,255,255,.04);
 }
 
-/* ── Hero layout ───────────────────────────────────────── */
+/* Hero layout */
 .hero { padding: 36px 0 20px; }
-
 .grid {
   display: grid;
   gap: 26px;
@@ -107,16 +96,12 @@ nav {
   .grid { grid-template-columns: 1fr; }
 }
 
-/* Χρυσό κείμενο ΜΟΝΟ (όχι κουτάκι) – για το “by GC ASTRA” */
-.gold{
+h1 .gold {
   background-image: linear-gradient(135deg, var(--gold-1), var(--gold-2) 55%, var(--gold-3));
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
   text-shadow: 0 0 6px rgba(240,185,70,.15);
 }
 
-/* ── Cards ─────────────────────────────────────────────── */
+/* Cards */
 .card {
   background: var(--card);
   border-radius: 16px;
@@ -124,35 +109,38 @@ nav {
   border: 1px solid rgba(255,255,255,.08);
   box-shadow: 0 10px 24px rgba(0,0,0,.28);
 }
-
 .card-premium {
-  background:
-    radial-gradient(120% 120% at 50% 0%, rgba(245,218,140,.06), transparent 45%),
-    var(--card);
+  background: radial-gradient(120% 120% at 50% 0%, rgba(245,218,140,.06), transparent 45%),
+              var(--card);
 }
 
-/* ── Muted text ────────────────────────────────────────── */
+/* Muted text */
 .muted { color: var(--muted); }
 
-/* Προαιρετική λάμψη σε χρυσό κείμενο */
-.gold-glow { text-shadow: 0 0 8px rgba(240,185,70,.22); }
+/* Gold text with glow */
+.gold {
+  background-image: linear-gradient(135deg, var(--gold-1), var(--gold-2) 55%, var(--gold-3));
+}
+.gold-glow {
+  text-shadow: 0 0 8px rgba(240,185,70,.22);
+}
 
-/* ── Premium badge (GC ASTRA στο card) ─────────────────── */
+/* Premium badge (GC ASTRA) */
 .gold-title {
   display: inline-block;
   padding: 4px 12px;
   border-radius: 6px;
   border: 1px solid var(--gold-2);
-  background: #0b0c0e;        /* μαύρο φόντο */
-  color: var(--gold-1);       /* χρυσά γράμματα */
+  background: #0b0c0e;
+  color: var(--gold-1);
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  box-shadow: 0 0 12px rgba(240,185,70,.18);
+  box-shadow: 0 0 12px rgba(240, 185, 70, 0.18);
 }
 
-/* ── Playbook link ─────────────────────────────────────── */
+/* Playbook link */
 .gold-link {
   font-weight: 700;
   position: relative;
@@ -175,7 +163,7 @@ nav {
   opacity: 1;
 }
 
-/* ── Pills ─────────────────────────────────────────────── */
+/* Pills */
 .pill {
   font-size: 12.5px;
   padding: 7px 12px;
@@ -186,9 +174,10 @@ nav {
   box-shadow: inset 0 0 0 1px rgba(0,0,0,.25);
 }
 
-/* ── Sections / Footer ─────────────────────────────────── */
+/* Sections */
 .section { padding: 28px 0; }
 
+/* Footer */
 footer {
   border-top: 1px solid rgba(255,255,255,.06);
   padding: 18px 0 28px;
