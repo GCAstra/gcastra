@@ -5,8 +5,10 @@ export default function Home() {
         <div className="container">
           <nav>
             <div className="logo">
-              <img src="/logo.png" alt="GC Astra Logo" style={{ height: 50 }} />
+              {/* Μεγαλύτερο logo με responsive ύψος */}
+              <img src="/logo.png" alt="GC ASTRA Logo" className="logo-img" />
             </div>
+
             <div style={{ display: 'none' }}></div>
             <a className="btn-outline" href="#contact">Contact</a>
           </nav>
@@ -16,36 +18,49 @@ export default function Home() {
       <main className="container">
         <section className="hero">
           <div className="grid">
+            {/* Αριστερή στήλη */}
             <div>
               <h1 style={{ fontSize: 42, lineHeight: 1.1, margin: 0, fontWeight: 900 }}>
                 Smart Trading & Research<br />
-                <span style={{
-                  background: 'linear-gradient(135deg,#fcd34d,#f59e0b)',
-                  WebkitBackgroundClip: 'text',
-                  color: 'transparent'
-                }}>
+                <span
+                  style={{
+                    background: 'linear-gradient(135deg,#fcd34d,#f59e0b)',
+                    WebkitBackgroundClip: 'text',
+                    color: 'transparent'
+                  }}
+                >
                   by GC ASTRA
                 </span>
               </h1>
+
               <p className="muted" style={{ marginTop: 14, fontSize: 18 }}>
                 Disciplined execution, transparent strategies, and mentoring for consistent growth.
               </p>
+
               <div style={{ display: 'flex', gap: 12, marginTop: 18 }}>
                 <a className="btn" href="#cta">Get started</a>
                 <a className="btn-outline" href="#about">Learn more</a>
               </div>
+
               <ul className="muted" style={{ marginTop: 18, fontSize: 14, lineHeight: 1.6 }}>
                 <li>• Transparent risk rules</li>
                 <li>• NinjaTrader 8 tooling</li>
                 <li>• Education in Greek & English</li>
               </ul>
             </div>
-            <div className="card" style={{ display: 'grid', placeItems: 'center', minHeight: 260 }}>
-              <div style={{ textAlign: 'center' }}>
-                <div className="muted" style={{ letterSpacing: 2, textTransform: 'uppercase' }}>GC ASTRA</div>
-                <div style={{ marginTop: 8, fontSize: 24, fontWeight: 700 }}>Smart Investing & Research</div>
-                <div className="muted" style={{ marginTop: 4 }}>Scalping • Strategy • Mentorship</div>
-              </div>
+
+            {/* Δεξιά στήλη – αναβαθμισμένη κάρτα */}
+            <div className="card pro-card" style={{ minHeight: 260 }}>
+              <div className="eyebrow">GC ASTRA</div>
+              <h3 className="card-title">Smart Investing & Research</h3>
+
+              <ul className="pills">
+                <li>Scalping</li>
+                <li>Strategy</li>
+                <li>Mentorship</li>
+              </ul>
+
+              <a href="#about" className="link-cta">Learn the Playbook →</a>
             </div>
           </div>
         </section>
@@ -53,8 +68,8 @@ export default function Home() {
         <section id="about" className="section">
           <h2 style={{ fontSize: 28 }}>About</h2>
           <p className="muted">
-            GC ASTRA focuses on rule-based intraday trading.  
-            We combine multi-timeframe context, transparent execution,  
+            GC ASTRA focuses on rule-based intraday trading.
+            We combine multi-timeframe context, transparent execution,
             and order-flow timing for measurable, repeatable decisions.
           </p>
         </section>
@@ -62,15 +77,23 @@ export default function Home() {
         <section id="cta" className="section card">
           <h3 style={{ fontSize: 22, marginTop: 0 }}>Ready to level up?</h3>
           <p className="muted">Leave your email and we'll reach out.</p>
-          <form onSubmit={(e) => e.preventDefault()} style={{ display: 'grid', gap: 12, gridTemplateColumns: '1fr auto' }} id="contact">
-            <input placeholder="you@example.com" required
+
+          <form
+            onSubmit={(e) => e.preventDefault()}
+            style={{ display: 'grid', gap: 12, gridTemplateColumns: '1fr auto' }}
+            id="contact"
+          >
+            <input
+              placeholder="you@example.com"
+              required
               style={{
                 borderRadius: 12,
                 padding: '12px 14px',
                 background: '#0b0c0e',
                 color: '#e5e7eb',
                 border: '1px solid rgba(255,255,255,.12)'
-              }} />
+              }}
+            />
             <button className="btn" type="submit">Send</button>
           </form>
         </section>
